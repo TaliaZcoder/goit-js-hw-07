@@ -42,25 +42,26 @@ li {
   margin-bottom: 8px;
 }
 
-.gallery {
+
+.gallery{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 48px 24px;
 }
 
-.gallery-item {
-  flex-basis: calc((100% - 40px) / 3); 
+.gallery li {
+  width: 360px;
+  height: 300px;
+  border: none;
 }
 
-.gallery-image {
+.gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  border-radius: 8px;
 }
+
 
 ::placeholder {
   font-weight: 400;
